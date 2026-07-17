@@ -5,12 +5,12 @@ export const couple = {
   names: 'Isela & Jayden',
   startDate: '2026-01-17T19:00:00',
   eyebrow: 'Wished upon the stars and found my home and my heart.',
-  title: 'Our little forever.',
+  title: 'The beginning of forever.',
   subtitle: 'For how we came to be, some special moments and memories, but just a drop in every thing well ever be.',
   welcome: 'I made a little place for us, for where we have been, who we are, and everything still ahead.',
   finalLetter: `
 
-  Isela, my love, my best friend, my home. Meeting you 6 months ago has been the best thing thats ever happened to me, and I say that with the utmost sincerity. I always knew what I wanted for my future, but so often it felt like a fantasy, thats until I met you. You have this charm and light that I cannot explain, it comforts me but at the same time motivates me to be the best version of myself. Im going to provide the future we dream of, and thats a promise that I can make to you. I will forever strive to attain all that we've talked about, all 5 kids (lollll), all the adventures, the wedding we want, and most of all a bond and love thats unshakable. You are my soulmate, the one I want to grow old with, I loved you yesterday, I love you today, and Ill love you forever.
+  Isela, my love, my best friend, my home. Meeting you six months ago was the best thing that's ever happened to me and I say that with the utmost sincerity. I always knew what I wanted for my future, but so often it felt like a fantasy, thats until I met you. You have this charm and light that I cannot explain, it comforts me but at the same time motivates me to be the best version of myself. Im going to provide the future we dream of, and thats a promise that I can make to you. I will forever strive to attain all that we've talked about, all 5 kids (lollll), all the adventures, the wedding we want, and most of all a bond and love thats unshakable. You are my soulmate, the one I want to grow old with, I loved you yesterday, I love you today, and Ill love you forever.
 `,
 }
 
@@ -86,17 +86,13 @@ export const reasons = [
   'Youve got beauty, oh is that an understatement, you are the most beautiful girl that Ive ever laid eyes on.',
   'My baby, you are so smart and driven, we are going to be unstoppable together, and I love that about you.',
   'You are the most thoughtful person I know, you do everything with maximal effort.',
-
-  // These below were not mine
   'You make even the most ordinary moments feel worth remembering.',
-  'You listen with your whole heart.',
-  'Your laugh changes the atmosphere of a room.',
   'You make kindness look effortless.',
   'With you, I never have to be anyone but myself.',
   'You believe in the version of me I am still becoming.',
   'You are both my calm and my favorite adventure.',
-  'You remember the tiny things — and somehow make them matter.',
-  'Home stopped being a place when I met you.',
+  'You remember the tiny things, and somehow make them matter.',
+  'Home stopped being a physical place when I met you.',
 ]
 
 export const importantDates = [
@@ -110,7 +106,7 @@ export const importantDates = [
 export const places: Place[] = [
   { name: 'UC Santa Barbara', date: 'Early 2026', story: 'Ocean breeze, sand between our toes, A little bit of vodka, and a love that only grows. A place forever etched within my heart, The place where our forever got its start.', image: '/photos/UCSB.jpg', mapUrl: 'https://www.google.com/maps/place/University+of+California,+Santa+Barbara/@34.4139629,-119.8515219,17z/data=!4m14!1m7!3m6!1s0x80e93f67f3314b37:0x4e956b7e5cb6cec2!2sUniversity+of+California,+Santa+Barbara!8m2!3d34.4139629!4d-119.848947!16zL20vMDFmMXI0!3m5!1s0x80e93f67f3314b37:0x4e956b7e5cb6cec2!8m2!3d34.4139629!4d-119.848947!16zL20vMDFmMXI0?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D' },
   { name: 'The Bayarea', date: 'Our entire lives', story: 'There was something so familiar about the way you talked, your sense of humor, the way you carried yourself. I attribute a lot of this to growing up in the Bayarea and it reinforced just how similar we are. ', image: img('photo-1501594907352-04cda38ebc29'), mapUrl: 'https://www.google.com/maps/place/San+Francisco+Bay+Area,+CA/@37.8734471,-123.7395291,8z/data=!3m1!4b1!4m6!3m5!1s0x808583a3a688d7b5:0x8c891b8457461fa9!8m2!3d37.8271784!4d-122.2913078!16zL20vMDZwdnI?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D' },
-  { name: 'Whats next?', date: 'Our next chapter', story: 'While I dont know which location will become our next adventure and make a lasting impact on us, I do know that it will be with you. ', image: '/photos/next_adventure.jpeg', mapUrl: 'https://www.google.com/maps/place/San+Francisco+City+Hall/@37.7806932,-122.6989607,11z/data=!3m1!5s0x8085809967dd6703:0x16ff23393f947b9b!4m10!1m2!2m1!1ssf+courthouse+wedding!3m6!1s0x808580997aeae663:0xb2706dff83574f4a!8m2!3d37.779275!4d-122.4192417!15sChVzZiBjb3VydGhvdXNlIHdlZGRpbmdaFyIVc2YgY291cnRob3VzZSB3ZWRkaW5nkgEJY2l0eV9oYWxs4AEA!16zL20vMDNwX3Bx?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D' },
+  { name: 'Whats next?', date: 'Our next chapter', story: 'I don\'t know where our next adventure will take us. Maybe another city, another country, or a place we\'ve never even dreamed of. Wherever it is, I know one thing for certain, I can\'t wait to discover it with you.', image: '/photos/next_adventure.jpeg', mapUrl: 'https://www.google.com/maps/place/San+Francisco+City+Hall/@37.7806932,-122.6989607,11z/data=!3m1!5s0x8085809967dd6703:0x16ff23393f947b9b!4m10!1m2!2m1!1ssf+courthouse+wedding!3m6!1s0x808580997aeae663:0xb2706dff83574f4a!8m2!3d37.779275!4d-122.4192417!15sChVzZiBjb3VydGhvdXNlIHdlZGRpbmdaFyIVc2YgY291cnRob3VzZSB3ZWRkaW5nkgEJY2l0eV9oYWxs4AEA!16zL20vMDNwX3Bx?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D' },
 ]
 
 export const adventures = [

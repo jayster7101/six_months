@@ -66,7 +66,6 @@ npm run build
 
 - Find three low-contrast hearts around the page.
 - Type `I love you` anywhere.
-- Enter the classic Konami code.
 - Click the tiny star at the end.
 
 The interface respects `prefers-reduced-motion`, includes keyboard controls for the gallery lightbox, and supports light and dark themes.
