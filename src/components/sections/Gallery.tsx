@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Heart, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { favoritePhotos } from '../../data/scrapbook'
 import { SectionHeading } from '../ui/SectionHeading'
@@ -21,7 +21,9 @@ export function Gallery({ onHeart }: { onHeart: () => void }) {
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 md:grid-cols-3 md:gap-9">
         {favoritePhotos.map((photo, i) => <motion.button initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * .07 }} whileHover={{ y: -10, rotate: 0, scale: 1.02 }} onClick={() => setSelected(i)} key={photo.src} style={{ rotate: `${rotations[i % rotations.length]}deg` }} className="polaroid"><img loading="lazy" src={photo.src} alt={photo.alt} /><span>{photo.caption}</span></motion.button>)}
       </div>
-      <button onClick={onHeart} aria-label="A hidden heart" className="absolute right-[5%] top-[44%] text-rose/20 transition hover:text-rose"><span className="text-lg">♥</span></button>
+      <button onClick={onHeart} aria-label="A hidden heart" className="absolute right-0 top-1/2 z-10 grid h-10 w-10 place-items-center rounded-full text-rose/50 transition hover:scale-125 hover:bg-blush/30 hover:text-rose focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose md:right-2">
+        <Heart size={19} fill="currentColor" />
+      </button>
       <AnimatePresence>{selected !== null && <motion.div role="dialog" aria-modal="true" aria-label="Photo lightbox" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[80] grid place-items-center bg-[#151211]/95 p-5 backdrop-blur-xl">
         <button onClick={() => setSelected(null)} aria-label="Close lightbox" className="absolute right-5 top-5 text-white"><X /></button>
         <button onClick={() => move(-1)} aria-label="Previous photo" className="absolute left-3 top-1/2 rounded-full bg-white/10 p-3 text-white md:left-8"><ChevronLeft /></button>
