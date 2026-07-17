@@ -18,12 +18,12 @@ const img = (id: string, width = 1200) => `https://images.unsplash.com/${id}?aut
 
 // Photos shown only in the "A handful of favorites" Polaroid gallery.
 export const favoritePhotos: Photo[] = [
-  { src: 'public/photos/sunset.jpeg', alt: 'Our first sunset together', caption: 'Wow.. Can you believe you shared a sunset walk with me??' },
-  { src: 'public/photos/vday.jpeg', alt: 'valentines ask', caption: 'Me asking you to be my valentine, best decision evaaaaaa!!' },
-  { src: 'public/photos/ring.jpeg', alt: 'Engagement ring', caption: 'We glanced a little, got a feel, but I think we should do it for real. ' },
-  { src: 'public/photos/bagel.jpeg', alt: 'photo of bagel', caption: 'I know you loved this place so it had to be in the favorites!' },
-  { src: 'public/photos/meal1.jpeg', alt: 'First time you cooked for me', caption: 'You said you can cook, little did I know you were a secret chef!' },
-  { src: 'public/photos/carve.jpeg', alt: 'Carved out initials', caption: 'Is this considered graffiti??? I hope it stays forever <3' },
+  { src: '/photos/sunset.jpeg', alt: 'Our first sunset together', caption: 'Wow.. Can you believe you shared a sunset walk with me??' },
+  { src: '/photos/vday.jpeg', alt: 'valentines ask', caption: 'Me asking you to be my valentine, best decision evaaaaaa!!' },
+  { src: '/photos/ring.jpeg', alt: 'Engagement ring', caption: 'We glanced a little, got a feel, but I think we should do it for real. ' },
+  { src: '/photos/bagel.jpeg', alt: 'photo of bagel', caption: 'I know you loved this place so it had to be in the favorites!' },
+  { src: '/photos/meal1.jpeg', alt: 'First time you cooked for me', caption: 'You said you can cook, little did I know you were a secret chef!' },
+  { src: '/photos/carve.jpeg', alt: 'Carved out initials', caption: 'Is this considered graffiti??? I hope it stays forever <3' },
 ]
 
 // Photos used by the story timeline. These are independent from favoritePhotos.
