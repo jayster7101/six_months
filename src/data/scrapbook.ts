@@ -22,7 +22,7 @@ export const favoritePhotos: Photo[] = [
   { src: '/photos/vday.jpeg', alt: 'valentines ask', caption: 'Me asking you to be my valentine, best decision evaaaaaa!!' },
   { src: '/photos/ring.jpeg', alt: 'Engagement ring', caption: 'We glanced a little, got a feel, but I think we should do it for real. ' },
   { src: '/photos/bagel.jpeg', alt: 'photo of bagel', caption: 'I know you loved this place so it had to be in the favorites!' },
-  { src: '/photos/meal1.jpeg', alt: 'First time you cooked for me', caption: 'You said you can cook, little did I know you were a secret chef!' },
+  { src: '/photos/Meal1.jpeg', alt: 'First time you cooked for me', caption: 'You said you can cook, little did I know you were a secret chef!' },
   { src: '/photos/carve.jpeg', alt: 'Carved out initials', caption: 'Is this considered graffiti??? I hope it stays forever <3' },
 ]
 
