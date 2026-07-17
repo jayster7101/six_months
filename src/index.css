@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; font-synthesis: none; text-rendering: optimizeLegibility; }
+.dark { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #f8f3ed; font-family: 'DM Sans', sans-serif; }
+button, a, input { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+::selection { background: #d8b4ad; color: #292321; }
+
+@layer components {
+  .section { @apply px-5 py-24 md:px-8 md:py-36; scroll-margin-top: 4rem; }
+  .eyebrow { @apply text-[10px] font-semibold uppercase tracking-[.28em]; }
+  .icon-button { @apply grid h-9 w-9 place-items-center rounded-full border border-stone-300 text-stone-600 transition hover:border-rose hover:text-rose dark:border-white/15 dark:text-stone-300; }
+  .polaroid { @apply flex flex-col bg-white p-2.5 pb-4 text-left shadow-[0_18px_40px_rgba(72,50,42,.14)] md:p-4 md:pb-6; }
+  .polaroid img { @apply aspect-[4/5] w-full object-cover; }
+  .polaroid span { @apply mt-3 line-clamp-2 font-script text-sm italic leading-5 text-stone-600 md:mt-4 md:text-base; }
+}
+
+.paper-grid { background-image: linear-gradient(rgba(117,91,79,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(117,91,79,.045) 1px, transparent 1px); background-size: 45px 45px; mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent); }
+
+.particles i { position: absolute; left: var(--x); bottom: -20px; color: rgba(165,107,104,.35); font-style: normal; font-size: 11px; animation: float-particle var(--duration) linear infinite; animation-delay: var(--delay); }
+@keyframes float-particle { 0% { transform: translateY(0) rotate(0); opacity: 0; } 15% { opacity: 1; } 100% { transform: translateY(-110vh) rotate(180deg); opacity: 0; } }
+
+.stars i { position: absolute; left: var(--x); top: var(--y); width: 2px; height: 2px; border-radius: 50%; background: #fff; opacity: .25; animation: twinkle var(--duration) ease-in-out infinite alternate; animation-delay: var(--delay); }
+@keyframes twinkle { to { opacity: .9; transform: scale(1.6); } }
+
+.heart-burst span { position: absolute; left: 50%; top: 50%; font-size: 16px; animation: burst 2.6s ease-out infinite; animation-delay: var(--delay); }
+@keyframes burst { from { transform: rotate(var(--angle)) translateX(20px) rotate(calc(var(--angle) * -1)); opacity: 1; } to { transform: rotate(var(--angle)) translateX(52vw) rotate(calc(var(--angle) * -1)); opacity: 0; } }
+.animate-spin-slow { animation: spin 12s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
