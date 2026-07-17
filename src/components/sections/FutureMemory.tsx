@@ -10,7 +10,7 @@ export function FutureMemory() {
   const [memory, setMemory] = useState<number | null>(null)
   return (
     <section id="future" className="section">
-      <SectionHeading eyebrow="What comes next" title="The best is unwritten" copy="Dreams feel a little more possible once they belong to both of us." />
+      <SectionHeading eyebrow="What comes next" title="The best is unwritten" copy="Never has my future felt so bright & I cant wait to experience my life with you." />
       <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2">
         <Reveal className="rounded-[2rem] bg-[#26302d] p-7 text-white shadow-soft md:p-10">
           <div className="flex items-center justify-between"><p className="eyebrow text-[#cad4c6]">Our someday list</p><Sparkles size={18} className="text-champagne" /></div>

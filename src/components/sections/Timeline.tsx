@@ -20,7 +20,7 @@ export function Timeline() {
                 <p className="eyebrow text-rose">{event.date}</p>
                 <div className="mt-2 flex items-center justify-between gap-4"><h3 className="font-display text-3xl">{event.title}</h3><motion.span animate={{ rotate: expanded ? 180 : 0 }}><ChevronDown size={18} /></motion.span></div>
                 <AnimatePresence initial={false}>
-                  {expanded && <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: .45 }} className="overflow-hidden"><p className="mt-5 leading-7 text-stone-600 dark:text-stone-400">{event.story}</p><div className={`mt-5 grid gap-3 ${event.photos.length > 1 ? 'grid-cols-2' : ''}`}>{event.photos.map(photo => <img loading="lazy" key={photo.src} src={photo.src} alt={photo.alt} className="h-44 w-full rounded-xl object-cover" />)}</div></motion.div>}
+                  {expanded && <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: .45 }} className="overflow-hidden"><p className="mt-5 leading-7 text-stone-600 dark:text-stone-400">{event.story}</p><div className={`mt-5 grid items-start gap-3 ${event.photos.length > 1 ? 'grid-cols-2' : ''}`}>{event.photos.map(photo => <img loading="lazy" key={photo.src} src={photo.src} alt={photo.alt} className="h-auto w-full rounded-xl bg-stone-100 object-contain dark:bg-stone-800" />)}</div></motion.div>}
                 </AnimatePresence>
               </motion.button>
             </Reveal>

@@ -8,7 +8,7 @@ Nearly all editable text, dates, photos, places, letters, reasons, keepsakes, an
 
 `src/data/scrapbook.ts`
 
-Replace the curated image URLs with imported local images whenever you are ready. For the player, change `playlist.audio` to a local file such as `/our-song.mp3` placed in `public/`. Music never autoplays.
+Replace the curated image URLs with imported local images whenever you are ready. The music section uses an Apple Music embed configured through `playlist.appleMusicUrl` and `playlist.embedUrl`. Music never autoplays.
 
 ## Develop with Docker Compose
 
