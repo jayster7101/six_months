@@ -74,7 +74,7 @@ export const timeline: TimelineEvent[] = [
 export const letters: Letter[] = [
   { prompt: "Open when you're sad", salutation: 'My love,', body: 'A day like this comes and goes, but always remember that you are not alone, you have me in your corner for life. Sad days come, but so do brighter ones, so never loath too much on things you cant control, it will be okay.', signoff: 'Always in your corner' },
   { prompt: 'Open when you miss me', salutation: 'Awwww my wittle babyyyyy,', body: 'If youre missing me, just imagine how Im feeling about you right now. Just know that soon enough, we will be reunited again and you can get endless hugs and kisses and date nights and flowers and did I mention kisses? Those days are just around the corner, well be together in no time!', signoff: 'Missing you right back' },
-  { prompt: 'Open on our 1 year anniversary', salutation: 'To my favorite person,', body: 'One year is such an accomplishment for us, so first off, cheers to that. Im writing this looking forward to that day. We will have gone through many great times and possibly a few rough patches, but one thing is for sure, well be even closer and stronger than ever before. Hey, you never know, a ring could be on its way!', signoff: 'One Year down, infinity yo go' },
+  { prompt: 'Open on our 1 year anniversary', salutation: 'To my favorite person,', body: 'One year is such an accomplishment for us, so first off, cheers to that. Im writing this looking forward to that day. We will have gone through many great times and possibly a few rough patches, but one thing is for sure, well be even closer and stronger than ever before. Hey, you never know, a ring could be on its way!', signoff: 'One Year down, infinity to go' },
 ]
 
 export const reasons = [
